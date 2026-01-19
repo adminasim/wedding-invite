@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nira & Liton Wedding Invitation</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgm" src="music.mp3" loop></audio>
+
+<div class="name-box" id="nameBox">
+  <h2>Dear Friend 💖</h2>
+  <p>Please enter your name</p>
+  <input type="text" id="guestName" placeholder="Your Name">
+  <button onclick="openCard()">Open Invitation</button>
+</div>
+
+<div class="card-container" id="card" style="display:none;">
+  <div class="card glow">
+
+    <!-- FRONT -->
+    <div class="front save-date">
+      <p class="top-text">SAVE THE DATE</p>
+
+      <div class="circle">
+        <div class="circle-inner">
+          <h1>Nira</h1>
+          <span>&</span>
+          <h1>Sayed</h1>
+        </div>
+      </div>
+
+      <div class="details">
+        <p>29 March</p>
+        <p>Brohmattar, Lalgola</p>
+      </div>
+
+      <p class="tap">Tap to Open</p>
+
+      <div>
+        <img src="https://png.pngtree.com/png-clipart/20250124/original/pngtree-muslim-wedding-couple-png-image_19790895.png" height="180px" width="130px">
+      </div>
+    </div>
+
+    <!-- INSIDE -->
+    <div class="inside">
+
+        <img src="C:\Users\USER\Downloads\download.png" style="width: 100%; position: absolute; border-radius: 8px; position: relative;">
+      <div class="right">
+        <p class="date">📅 29 March</p>
+        <p class="countdown" id="countdown"></p> 
+        <h3 class="title">You Are Invited To Wedding Of</h3>
+        <p class="msg">
+          With the blessings of our families,<br>
+          we joyfully invite you to celebrate the wedding of<br>
+          <b>Nira & Liton</b>
+        </p> 
+        <p>ভালোবাসা ও আশীর্বাদের সাথে আপনাকে আমন্ত্রণ</p>
+        <p class="guest"></p>
+      </div>
+    </div>
+
+  </div>
+  <p style="text-align: right; color: white;">Developed  by @Codernasim</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
