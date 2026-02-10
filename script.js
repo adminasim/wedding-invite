@@ -7,7 +7,7 @@ function openCard(){
   document.getElementById("nameBox").style.display="none";
   document.getElementById("card").style.display="block";
 
-  document.querySelector(".guest").innerText = "ভালোবাসাসহ, " + name;
+  document.querySelector(".guest").innerText = "Please come dear 💖, " + name;
 
   document.getElementById("bgm").play();
   confetti();
@@ -51,3 +51,4 @@ setInterval(() => {
   document.getElementById("countdown").innerHTML =
     `⏳ ${days} days ${hours} hrs ${mins} mins ${secs} secs remaining`;
 }, 1000);
+
