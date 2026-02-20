@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Nira's Wedding</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Nira & Sayed's Wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 480px) {
+    .card {
+        height: 600px; /* Mobile-er screen-er sathe adjustment */
+    }
+    .msg {
+        font-size: 13px; /* Phone-e jate overlap na hoy */
+        padding: 0 10px;
+    }
+    .couple-names {
+        font-size: 24px;
+    }
+}
+    </style>
 </head>
 <body>
 
-<audio id="bgm" src="music.mp3" loop></audio>
+    <audio id="bgm" src="music.mp3" loop></audio>
 
-<div class="name-box" id="nameBox">
-  <h2>Dear Friend 💖</h2>
-  <p>Please enter your name</p>
-  <input type="text" id="guestName" placeholder="Your Name">
-  <button onclick="openCard()">Open Invitation</button>
-</div>
+    <div class="name-box" id="nameBox">
+        <h2>Dear Friend 💖</h2>
+        <p>Please enter your name to open the invitation</p>
+        <input type="text" id="guestName" placeholder="Your Name">
+        <button onclick="openCard()">Open Invitation</button>
+    </div>
 
-<div class="card-container" id="card" style="display:none; border-radius: 20px;">
-  <div class="card glow" style="border-radius:20px;">
+    <div class="card-container" id="card" style="display:none;">
+        <div class="card glow">
 
-    <!-- FRONT -->
-    <div class="front save-date">
-      <p class="top-text">SAVE THE DATE</p>
+            <div class="front save-date">
+                <p class="top-text">SAVE THE DATE</p>
+                <div class="circle">
+                    <div class="circle-inner">
+                        <h1>Nira</h1>
+                        <span>&</span>
+                        <h1>Sayed</h1>
+                    </div>
+                </div>
+                <div class="details">
+                    <p>Sunday 29 March, 2026</p>
+                    <p><b>Brohmattar, Lalgola</b></p>
+                </div>
+                <p class="tap-hint">Tap to Open 👆</p>
+                <div class="couple-img">
+                    <img src="https://png.pngtree.com/png-clipart/20250124/original/pngtree-muslim-wedding-couple-png-image_19790895.png" alt="Couple">
+                </div>
+            </div>
 
-      <div class="circle">
-        <div class="circle-inner">
-          <h1>Nira</h1>
-          <span>&</span>
-          <h1>Sayed</h1>
+            <div class="inside">
+                <div class="overlay">
+                    <p class="date">In-Sha-Allah on<br>Sunday 📅 29 March</p>
+                    <div id="countdown" class="countdown"></div>
+                    
+                    <h3 class="title" style="background: darkred; border-radius: 20px; color: silver; font-size: 16px;">You Are Invited To The Wedding Of</h3>
+                    
+                    <p class="couple-names">Nilufa Yeasmin <br>&<br> Sayed Anowar</p>
+
+                    <p class="msg" style="line-height: 1.6; font-style: italic; color: #444;">
+                        "A journey of a thousand miles begins with a single step." 
+                        <br><br>
+                        As my sister <b>Nilufa Yeasmin</b> begins her new life with <b>Sayed Anowar</b>, 
+                        I, <b>Nasim</b>, warmly invite you to be a part of this beautiful chapter <span class="guest"></span>.
+                    </p>
+
+                    <div class="actions">
+                        <a href="https://wa.me/8016841160?text=I%20am%20coming%20to%20the%20wedding!" class="btn rsvp">Confirm Presence (RSVP)</a>
+                    </div>
+                    
+                    <p class="shaadi-tag">Shaadi Mein Zaroor Ana💖<span class="guest"></span></p>
+                </div>
+            </div>
+
         </div>
-      </div>
-
-      <div class="details">
-        <p>Sunday 29 March</p>
-        <p>Brohmattar, Lalgola</p>
-      </div>
-
-      <p class="tap">Tap to Open</p>
-
-      <div>
-        <img src="https://png.pngtree.com/png-clipart/20250124/original/pngtree-muslim-wedding-couple-png-image_19790895.png" height="180px" width="130px">
-      </div>
+        <p class="credits">Developed by <a href="https://www.facebook.com/profile.php?id=100086485667587">@Codernasim</a></p>
     </div>
 
-    <!-- INSIDE -->
-    <div class="inside" style="border-radius: 20px;">
-
-        <img src="download.png" style="width: 100%; height:100%; position: absolute; border-radius: 20px; position: relative;">
-      <div class="right">
-        <p class="date">In-Sha-Allah on<br>Sunday 📅 29 March</p>
-        <p class="countdown" id="countdown"></p> 
-        <h3 class="title">You Are Invited To Wedding Of</h3>
-        <p class="msg" style="font-size: 14px;">"Destiny is not something to be pursued, It is something which walks with us, Always, hand in hand."
-         I, <b>Nasim</b>, cordially invite you to the wedding celebration of my sister
-
-<br><b>Nilufa Yeasmin 💖 Sayed Anowar</b><br>
-        </p> 
-        <p>Your presence will make this<br>day truly special for us.</p>
-        <p>Shaadi Mein Zaroor Ana<br>💖<span class="guest"> </span></p>
-      </div>
-    </div>
-
-  </div>
-  <p style="text-align: right; color: white;">Developed  by <a href="https://www.facebook.com/profile.php?id=100086485667587" style="text-decoration: none;">@Codernasim</a></p>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
